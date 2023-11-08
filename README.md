@@ -1,6 +1,6 @@
 # GameNews-Parser
 
-```
+```python
 def getInfo(fileLocation):
     txt = 'None'
     file = open(fileLocation, 'a', encoding="utf=8")
