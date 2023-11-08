@@ -16,4 +16,4 @@ def getInfo(fileLocation):
         print("You parsed all news in data file")
     file.close
     return spisUrl, spisNews
-``
+```
