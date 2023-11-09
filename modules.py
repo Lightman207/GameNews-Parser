@@ -13,7 +13,7 @@ spisUrl = []
 headers = {"User-Agent": 
            "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.5) Gecko/20091102 Firefox/3.5.5 (.NET CLR 3.5.30729)"}
 
-def parseSite(url, divLocation, titleAtr, titleClass, it):
+def parseSite(url, divLocation, titleAtr, titleClass):
     url3 = []
     response = requests.get(url, headers=headers)
 
@@ -27,8 +27,7 @@ def parseSite(url, divLocation, titleAtr, titleClass, it):
 
         url2 = url.rpartition('.ru')[0]
         url2 = str(url2) + '.ru' + str(href)
-        it += 1
-        
+
         titleList.append(title)
         urlList.append(str(url2))
     
