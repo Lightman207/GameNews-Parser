@@ -1,4 +1,4 @@
-# This is Game News Parser v1.1
+# This is Game News Parser v1.0
 
 ## *How to setup?*
 
