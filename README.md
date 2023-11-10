@@ -4,7 +4,7 @@
 
 + Install last Python version [here](https://www.python.org/downloads/)
 + Install Library in your project 
-```pip install requests, beautifulsoup4```
+```pip install requests, beautifulsoup4, lxml```
 + Clone repository in your directory
 + That's all, have fun :heart:
 ## *How it works*
