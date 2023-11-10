@@ -43,7 +43,7 @@ for i in range(1, howMaPages):
 ```
 4) Now you need to get your parsed info, to do this you need call the function ``getInfo()`
 ```python
-    getInfo('data/text.txt') #This's folder where you want to save your parsed data
+    pars.getInfo('data/text.txt') #This's folder where you want to save your parsed data
 ```
 ## What features are in development?
 + Function `getInfo()` only creating .txt file with parsed data, but we want to this function can give you dictionary with all parsed data. It's first what we want to change in our project
