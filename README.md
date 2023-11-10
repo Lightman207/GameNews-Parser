@@ -13,7 +13,7 @@
 #### To do this, you need to: 
 1) import in your project
 ```python
-import module as pars
+import modules as pars
 from time import sleep
 ```
 2) Add this code
