@@ -13,8 +13,8 @@ spisUrl = []
 headers = {"User-Agent": 
            "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.5) Gecko/20091102 Firefox/3.5.5 (.NET CLR 3.5.30729)"}
 
+@property
 def parseSite(url, divLocation, titleAtr, titleClass):
-    url3 = []
     response = requests.get(url, headers=headers)
 
     soup = BeautifulSoup(response.text, "lxml")
@@ -32,13 +32,14 @@ def parseSite(url, divLocation, titleAtr, titleClass):
         urlList.append(str(url2))
     
 
-
+@property
 def getInfo(fileLocation):
     txt = 'None'
     file = open(fileLocation, 'a', encoding="utf=8")
     count = 0
     try:
-        for element in titleList:
+        # using `_` keyword for non-used vars in iterations
+        for _ in titleList:
             count += 1
 
             txt = str(titleList[count])
